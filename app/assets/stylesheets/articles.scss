@@ -1,0 +1,48 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  font-family:'Courier New', Courier, monospace;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 40vw;
+  margin: auto;
+}
+
+.navbar {
+  // position:fixed;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: aliceblue;
+  border-bottom: 1px solid rgb(201, 230, 255);
+}
+
+.flexbox {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-div {
+  padding-top: 15px;
+}
+.submit-btn {
+  padding-top: 15px;
+
+}
+.link-btn{
+  margin-top: 15px;
+  padding: 15px 25px;
+  background-color: aliceblue;
+  border: 1px solid rgb(201, 230, 255);
+  text-align: center;
+
+}

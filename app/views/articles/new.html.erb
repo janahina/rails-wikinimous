@@ -1,18 +1,1 @@
-<div class="container">
-  <%= form_for(@article) do |f| %>
-    <div class="form-div flexbox space-between">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-    </div>
-    <div class="form-div flexbox space-between">
-      <%= f.label :content %>
-      <%= f.text_field :content %>
-    </div>
-    <div class="submit-btn">
-      <%= f.submit %>
-    </div>
-    <div class="link-btn">
-      <%= link_to("Home", articles_path) %>
-    </div>
-  <% end %>
-</div>
+<%= render "form", article: @article %>

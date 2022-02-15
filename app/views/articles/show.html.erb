@@ -1,0 +1,12 @@
+<div class="container">
+  <h2><%= @article.title %></h2>
+  <p><%= @article.content %></p>
+  <div>
+    <p class=""><strong><%= link_to("Home", articles_path) %></p>
+    <p class=""><strong><%= link_to "Update article", edit_article_path(@article) %></p>
+    <p class=""><strong><%= link_to "Delete #{@article.title}",
+                article_path(@article),
+                method: :delete,
+                data: { confirm: "Are you sure?" } %></p>
+  </div>
+</div>
